@@ -1,4 +1,5 @@
 .env
+.hypothesis
 circuits/.hypothesis/unicode_data/13.0.0
 .pytest_cache
 
