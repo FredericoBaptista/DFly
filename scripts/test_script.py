@@ -107,7 +107,7 @@ class Test:
     @staticmethod
     def do(test_number):
         # The path to Excel file
-        excel_path = 'tests/Tests2.xlsx'
+        excel_path = 'tests/Tests.xlsx'
 
         # Load the existing Excel file
         df = pd.read_excel(excel_path, sheet_name='Round2')
