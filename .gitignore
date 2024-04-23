@@ -1,6 +1,6 @@
 .env
 .hypothesis
-circuits/.hypothesis/unicode_data/13.0.0
+circuits/.hypothesis
 .pytest_cache
 
 
