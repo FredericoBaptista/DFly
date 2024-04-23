@@ -55,10 +55,17 @@ def convert_serial_to_int(serial):
 
 def write_tree(nodes, tree_name):
     tree_file = f"{tree_name}MerkleTree.txt"
-    with open(os.path.join(CACHE_DIR, tree_file), "w") as file:
+    file_path = os.path.join(CACHE_DIR, tree_file)
+    
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        print(f"Warning: The file {tree_file} does not exist and will be created.")
+    
+    # Write the nodes to the file
+    with open(file_path, "w") as file:
         for level in nodes:
+            # Converting each element in the level to hexadecimal before writing
             file.write(",".join(map(lambda x: hex(x), level)) + "\n")
-
 
 def read_tree(tree_name):
     tree_file = f"{tree_name}MerkleTree.txt"
@@ -81,7 +88,14 @@ def read_insertion(tree_name):
 
 def write_insertion(i, tree_name):
     insertion_file = f"{tree_name}_i.txt"
-    with open(os.path.join(CACHE_DIR, insertion_file), "w") as file:
+    file_path = os.path.join(CACHE_DIR, insertion_file)
+    
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        print(f"Warning: The file {insertion_file} does not exist and will be created.")
+    
+    # Write the value to the file
+    with open(file_path, "w") as file:
         file.write(str(i))
         
 # Function to initialize the Merkle tree with the given depth
@@ -275,19 +289,12 @@ def get_proof(serial_number, nonce, tree_name):
 
     #return parsed_output
 
-def main():
-    start_time = time.perf_counter()
-    insert_leaf("Test3", 1000, "Certified")
-    insert_leaf("Test2", 1000, "Open")
-    insert_leaf("Test2", 1000, "BVLOS")
-    end_time = time.perf_counter()
-
-    duration = end_time-start_time
-    print(duration)
-
+def main():    
     
+    #initialize_tree(3, "Operator")
+    insert_leaf("16749", 100 , "Operator")
+
     """
-    initialize_tree(3, "Operator")
     initialize_tree(3, "Open")
     initialize_tree(3, "Specific")
     initialize_tree(3, "Certified")

@@ -80,9 +80,6 @@ class Application(tk.Tk):
         self.trajectory_entry.pack(padx=10, pady=5)
 
         # Flight Info Section
-        self.flight_info_label = ttk.Label(self, text="Flight Info")
-        self.flight_info_label.pack(padx=10, pady=10)
-
         # ID Tech Dropdown
         self.id_tech_label = ttk.Label(self, text="Select ID Tech")
         self.id_tech_label.pack(padx=10, pady=5)

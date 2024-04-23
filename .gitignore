@@ -1,4 +1,3 @@
-.gitignore
 .env
 .hypothesis
 circuits/.hypothesis/unicode_data/13.0.0
@@ -23,7 +22,7 @@ circuits/InclusionProof_js
 scripts/__pycache__
 scripts/merkle_tree/__pycache__
 scripts/merkle_tree/build
-scripts/merkle_tree/cache
+
 scripts/merkle_tree/Poseidon/__pycache__
 scripts/merkle_tree/Poseidon/Poseidon.egg_info
 
