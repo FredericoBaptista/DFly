@@ -1,0 +1,7 @@
+README.md
+setup.py
+Poseidon.egg-info/PKG-INFO
+Poseidon.egg-info/SOURCES.txt
+Poseidon.egg-info/dependency_links.txt
+Poseidon.egg-info/requires.txt
+Poseidon.egg-info/top_level.txt

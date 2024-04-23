@@ -1,0 +1,101 @@
+{
+  "FlightRequest": {
+    "_SN": "123",
+    "_op_mode": 1,
+    "proof_op_mode": [
+      [
+        "0x23e1879cdca00fa4c89ed37ff308d8af4b7ae76415d2ea6ba7bbb5f937017a9b",
+        "0x1d7c11568d368cea440d0d8f3a04b17904e757c8e7c95a89b5222479ec740331"
+      ],
+      [
+        [
+          "0x0bbcbaba8a9711687e4070c998b2b5da676a90f2e8f1c9db654f987ff15a3bb1",
+          "0x2df5bb731723f74b265874c4d4d4d41404c4a60ae670d9aa7edc0a7b72a6c2b3"
+        ],
+        [
+          "0x11ca85babd8bb64c312debbdd6402b8764ebb0506408a283d71b4f40bce311a7",
+          "0x017b2cda82cdb2a104b139109832d357ef95fe1d1211a93e98dc4395a7be1815"
+        ]
+      ],
+      [
+        "0x11d287841a700c482b0928b0389b0147ac95ef8649839ef575cfb22607c0c552",
+        "0x11364e3ff80423615cbdd2815820ee53c7aceab130f5930990b8e5179dd551f4"
+      ],
+      ["0x1a824d3e043c4b00534473d67a7c21b0241075211790654e9ff1797cd55b7846"]
+    ],
+    "_flight_type": true,
+    "proof_flight_type": [
+      [
+        "0x23e1879cdca00fa4c89ed37ff308d8af4b7ae76415d2ea6ba7bbb5f937017a9b",
+        "0x1d7c11568d368cea440d0d8f3a04b17904e757c8e7c95a89b5222479ec740331"
+      ],
+      [
+        [
+          "0x0bbcbaba8a9711687e4070c998b2b5da676a90f2e8f1c9db654f987ff15a3bb1",
+          "0x2df5bb731723f74b265874c4d4d4d41404c4a60ae670d9aa7edc0a7b72a6c2b3"
+        ],
+        [
+          "0x11ca85babd8bb64c312debbdd6402b8764ebb0506408a283d71b4f40bce311a7",
+          "0x017b2cda82cdb2a104b139109832d357ef95fe1d1211a93e98dc4395a7be1815"
+        ]
+      ],
+      [
+        "0x11d287841a700c482b0928b0389b0147ac95ef8649839ef575cfb22607c0c552",
+        "0x11364e3ff80423615cbdd2815820ee53c7aceab130f5930990b8e5179dd551f4"
+      ],
+      ["0x1a824d3e043c4b00534473d67a7c21b0241075211790654e9ff1797cd55b7846"]
+    ],
+    "_flight_cat": true,
+    "proof_flight_cat": [
+      [
+        "0x23e1879cdca00fa4c89ed37ff308d8af4b7ae76415d2ea6ba7bbb5f937017a9b",
+        "0x1d7c11568d368cea440d0d8f3a04b17904e757c8e7c95a89b5222479ec740331"
+      ],
+      [
+        [
+          "0x0bbcbaba8a9711687e4070c998b2b5da676a90f2e8f1c9db654f987ff15a3bb1",
+          "0x2df5bb731723f74b265874c4d4d4d41404c4a60ae670d9aa7edc0a7b72a6c2b3"
+        ],
+        [
+          "0x11ca85babd8bb64c312debbdd6402b8764ebb0506408a283d71b4f40bce311a7",
+          "0x017b2cda82cdb2a104b139109832d357ef95fe1d1211a93e98dc4395a7be1815"
+        ]
+      ],
+      [
+        "0x11d287841a700c482b0928b0389b0147ac95ef8649839ef575cfb22607c0c552",
+        "0x11364e3ff80423615cbdd2815820ee53c7aceab130f5930990b8e5179dd551f4"
+      ],
+      ["0x1a824d3e043c4b00534473d67a7c21b0241075211790654e9ff1797cd55b7846"]
+    ],
+    "_operator_num": 1,
+    "proof_operator_num": [
+      [
+        "0x23e1879cdca00fa4c89ed37ff308d8af4b7ae76415d2ea6ba7bbb5f937017a9b",
+        "0x1d7c11568d368cea440d0d8f3a04b17904e757c8e7c95a89b5222479ec740331"
+      ],
+      [
+        [
+          "0x0bbcbaba8a9711687e4070c998b2b5da676a90f2e8f1c9db654f987ff15a3bb1",
+          "0x2df5bb731723f74b265874c4d4d4d41404c4a60ae670d9aa7edc0a7b72a6c2b3"
+        ],
+        [
+          "0x11ca85babd8bb64c312debbdd6402b8764ebb0506408a283d71b4f40bce311a7",
+          "0x017b2cda82cdb2a104b139109832d357ef95fe1d1211a93e98dc4395a7be1815"
+        ]
+      ],
+      [
+        "0x11d287841a700c482b0928b0389b0147ac95ef8649839ef575cfb22607c0c552",
+        "0x11364e3ff80423615cbdd2815820ee53c7aceab130f5930990b8e5179dd551f4"
+      ],
+      ["0x1a824d3e043c4b00534473d67a7c21b0241075211790654e9ff1797cd55b7846"]
+    ],
+    "endurance": 1,
+    "trajectory_4D": "123",
+    "approved": true
+  },
+  "FlightInfo": {
+    "id_tech": 1,
+    "ex_connec_meth": 1,
+    "emergency_proc": 1
+  }
+}

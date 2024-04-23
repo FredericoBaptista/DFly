@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Poseidon
+Version: 0.1.0
+Summary: A Python package that interfaces with Circom
+Home-page: https://github.com/your_username/Poseidon
+Author: Your Name
+Author-email: your_email@example.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/your_username/Poseidon/issues
+Project-URL: Source, https://github.com/your_username/Poseidon
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Poseidon
+
+## Description
+Poseidon is a package that interfaces with Circom to [describe purpose here]...
+
+## Installation
+
+### Prerequisites
+- **[Circom](https://github.com/iden3/circom):** Poseidon requires Circom to compile circuits. Follow the installation instructions on the Circom GitHub page.
+
+### Installing Poseidon
+To install Poseidon, ensure you have Python >=3.7 and run the following command:
+```bash
+pip install Poseidon
+
+

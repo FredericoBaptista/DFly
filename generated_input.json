@@ -1,0 +1,21 @@
+{
+    "FlightRequest": {
+        "_SN": "test_serial_number",
+        "_op_mode": 1,
+        "proof_op_mode": 0,
+        "_flight_type": true,
+        "proof_flight_type": 0,
+        "_flight_cat": true,
+        "proof_flight_cat": 0,
+        "_operator_num": "1234",
+        "proof_operator_num": 0,
+        "endurance": "2000",
+        "trajectory_4D": "8uhgtr5rfghji9#",
+        "approved": false
+    },
+    "FlightInfo": {
+        "id_tech": "2",
+        "ex_connec_meth": "3",
+        "emergency_proc": "4"
+    }
+}
