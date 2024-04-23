@@ -1,6 +1,6 @@
 .env
 .hypothesis
-circuits/.hypothesis
+circuits/.hypothesis/unicode_data/13.0.0
 .pytest_cache
 
 
@@ -16,4 +16,7 @@ circuits/pot12_final.ptau
 circuits/proof.json
 circuits/public.json
 circuits/verification_key.json
+
+scripts/__pycache__
+
 
