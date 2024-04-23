@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from .merkle_tree import SNMerkleTree
+from ..merkle_tree import SNMerkleTree
 
 class Application(tk.Tk):
     def __init__(self):

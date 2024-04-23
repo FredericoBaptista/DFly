@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from .merkle_tree import SNMerkleTree
+from ..merkle_tree import SNMerkleTree
 from brownie import FlightAuth, accounts, config, network, convert
 import json
 
