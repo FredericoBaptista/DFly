@@ -1,3 +1,4 @@
+.gitignore
 .env
 .hypothesis
 circuits/.hypothesis/unicode_data/13.0.0
@@ -16,10 +17,24 @@ circuits/pot12_final.ptau
 circuits/proof.json
 circuits/public.json
 circuits/verification_key.json
+circuits/InclusionProof_cpp
+circuits/InclusionProof_js
 
 scripts/__pycache__
+scripts/merkle_tree/__pycache__
+scripts/merkle_tree/build
+scripts/merkle_tree/cache
+scripts/merkle_tree/Poseidon/__pycache__
+scripts/merkle_tree/Poseidon/Poseidon.egg_info
+
+build
+
 
 tests/__pycache__
+
+generated_input.json
+
+
 
 
 
