@@ -1,5 +1,6 @@
-![alt text](https://iili.io/JgM817S.md.png)
-
+<p align="center">
+  <img src="https://iili.io/JgM817S.md.png" width="250" height="250">
+</p>
 
 # DFly
 
@@ -18,9 +19,10 @@ DFly leverages cutting-edge technologies including Merkle trees for operation ca
 To get started with DFly, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://example.com/dfly.git
-   cd dfly
+   git clone https://github.com/FredericoBaptista/Dfly/tree/main
+
 
 ## Usage
 
 ## Contact
+
