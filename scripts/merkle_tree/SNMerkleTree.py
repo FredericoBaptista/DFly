@@ -291,7 +291,7 @@ def get_proof(serial_number, nonce, tree_name):
 
 def main():    
     
-    #initialize_tree(3, "Operator")
+    initialize_tree(3, "Operator")
     insert_leaf("16749", 100 , "Operator")
 
     """
