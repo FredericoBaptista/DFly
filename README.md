@@ -49,8 +49,7 @@ To get started with DFly, follow these steps:
    ```bash
    pip install -r requirements.txt
 4. Configure .env file.
-
-It's necessary to have a .env file with your wallet credentials inserted, so that you can run the project. The .env file looks like the following:
+   - It's necessary to have a .env file with your wallet credentials inserted, so that you can run the project. The .env file looks like the following:
 
       
       export PRIVATE_KEY = 
@@ -58,7 +57,18 @@ It's necessary to have a .env file with your wallet credentials inserted, so tha
       export ETHERSCAN_TOKEN =
       
 
-   Be sure to start an infura project first at: https://www.infura.io/
+   - Be sure to start an infura project first at: https://www.infura.io/
+
+5. Compile circom circuits:
+   - Go to the circuits directory:
+      ```bash
+      cd circuits
+   - Run the circom_script.sh:
+      ```bash
+      ./circom_script.sh
+   - Choose 
+
+
 ## Contracts Deployment
 This is an essential step to be able to use DFly. Although some test contracts are already deployed in the Sepolia test net, you need to deploy your own contracts.
 In order to do this a deploy.py script is available under the scripts folder.
