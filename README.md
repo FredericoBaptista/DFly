@@ -50,7 +50,7 @@ To get started with DFly, follow these steps:
    pip install -r requirements.txt
 ## Usage
 <p align="center">
-<img src="https://pasteboard.co/rz8HxA4Um1mb.png" alt="JrdKQov.md.png" border="0"></a>
+<img src="https://pasteboard.co/rz8HxA4Um1mb.png">
 </p>
 
 
