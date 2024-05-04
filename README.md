@@ -51,11 +51,13 @@ To get started with DFly, follow these steps:
 4. Configure .env file.
 
 It's necessary to have a .env file with your wallet credentials inserted, so that you can run the project. The .env file looks like the following:
+
       ```
       export PRIVATE_KEY = 
       export WEB3_INFURA_PROJECT_ID = 
       export ETHERSCAN_TOKEN =
       ```
+      
    Be sure to start an infura project first at: https://www.infura.io/
 ## Contracts Deployment
 This is an essential step to be able to use DFly. Although some test contracts are already deployed in the Sepolia test net, you need to deploy your own contracts.
