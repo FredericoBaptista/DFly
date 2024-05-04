@@ -48,10 +48,53 @@ To get started with DFly, follow these steps:
 3. Install all other needed dependencies:
    ```bash
    pip install -r requirements.txt
+4. Configure .env file.
+   It's necessary to have a .env file with your wallet credentials inserted, so that you can run the project. The .env file looks like the following:
+      ```bash
+      export PRIVATE_KEY = 
+      export WEB3_INFURA_PROJECT_ID = 
+      export ETHERSCAN_TOKEN =
+   Be sure to start an infura project first at: https://www.infura.io/
 ## Usage
 <p align="center">
 <img src="https://imgtr.ee/images/2024/05/04/419523a45ae2d3f8e4fe5dcf6d8b3d2a.png" alt="419523a45ae2d3f8e4fe5dcf6d8b3d2a.png" border="0" />
 </p>
+There's essentially, two phases of the usage of DFly, as it can be seen above. The first is the approval of the UAS and operator into the Merkle trees. The second is the actual usage of the smart contracts, that effectivelly allow the operator to request a flight authorisation.
+
+### Approval in Merkle Trees
+
+Using brownie it's possible to insert the UAS and UAS operator numbers into the merkle trees. For that, it is necessary to understand the structure of the merkle tree management. The following figure explains just that:
+
+<p align="center">
+<img src="https://imgtr.ee/images/2024/05/04/a59b498dfbf4d2bd7feecca7ad87e873.png" alt="a59b498dfbf4d2bd7feecca7ad87e873.png" border="0" />
+</p>
+
+To start properly the usage, you should initialize all the necessary trees with the required depth for the usage you want. In the following example, we choose all the merkle trees of depth 3. The following lines have to be included in SNMerkleTree.py:
+
+   ```bash
+   initialize_tree(3, "Operator")
+   initialize_tree(3, "Open")
+   initialize_tree(3, "Specific")
+   initialize_tree(3, "Certified")
+   initialize_tree(3, "SpecialOps")
+   initialize_tree(3, "BVLOS")
+
+To insert the operator and UAS number, following the logic of the previous figure, you can insert the UAS number and the operator number on the respective trees. In the following example, we choose a UAS legalized to fly on the following modes:
+
+| Operation Mode | Flight Category | Flight Type  |
+| -------------- | --------------- | ------------ | 
+|    Specific    |      BVLOS      |  SpecialOps  |
+
+
+To do this the following lines of code need to be included in SNMerkleTree.py, (change operator_number, nonce and uas_serial_number to your specific case). **The nonce has to be an integer** :
+
+   ```bash
+   insert_leaf("operator_number", nonce , "Operator")
+   insert_leaf("uas_serial_number, nonce, "Specific")
+   insert_leaf("uas_serial_number, nonce, "BVLOS")
+   insert_leaf("uas_serial_number, nonce, "SpecialOps")
+
+
 
 
 ## Contact
