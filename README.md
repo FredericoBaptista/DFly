@@ -21,6 +21,28 @@ To get started with DFly, follow these steps:
    ```bash
    git clone https://github.com/FredericoBaptista/Dfly/tree/main
 
+2. Installing Circom
+   - Install dependencies:
+      - Node.js:
+         ```bash
+         sudo apt update
+      
+      - Rust:
+         ```bash
+         curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+   - Clone the circom repository:
+      ```bash
+      git clone https://github.com/iden3/circom.git
+   
+   - Enter the circom directory and use the cargo build to compile:
+      ```bash
+      cargo build --release
+   
+
+3. Install all other needed dependencies:
+   ```bash
+   pip install -r requirements.txt
+
 
 ## Usage
 
