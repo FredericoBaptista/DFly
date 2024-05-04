@@ -114,8 +114,20 @@ brownie run merkle_tree/SNMerkleTree.py --network sepolia
 
 ### Flight Request
 
-Once the
+Once the necessary information from the UAS operator and UAS are added, it's now possible to request a flight. To do this, there's a small user interface that helps speed up the process of performing the request.
 
+You just have to run this ui by running in you directory:
+```
+brownie run merkle_tree/user_interface/FLIGHTREQ_GUI.py --network sepolia
+```
+
+The UI will look like this:
+
+<p align="left">
+<img src="https://imgtr.ee/images/2024/05/04/f306813c00cb725949ee41f8861ff276.png" alt="f306813c00cb725949ee41f8861ff276.png" border="0" />
+<p>
+
+You just have to fill in all the data and click "Submit". 
 
 
 ## Contact
