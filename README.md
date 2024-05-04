@@ -61,9 +61,9 @@ This is an essential step to be able to use DFly. Although some test contracts a
 In order to do this a deploy.py script is available under the scripts folder.
 
 1. Run brownie:
-   '''
+   ```
    brownie run deploy.py --network sepolia
-   '''
+   ```
 The example is done for sepolia network, but you can change your network under brownie definitions. For more information go to [Brownie Documentation](https://eth-brownie.readthedocs.io/en/stable/toctree.html)
 ## Usage
 <p align="center">
@@ -105,9 +105,9 @@ To do this the following lines of code need to be included in SNMerkleTree.py, (
    ```
 
 Once all this setup is done in the SNMerkleTree.py it's now possible to run SNMerkleTree, once again, using brownie:
-'''
+```
 brownie run merkle_tree/SNMerkleTree.py --network sepolia
-'''
+```
 
 ### Flight Request
 
