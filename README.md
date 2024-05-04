@@ -56,6 +56,15 @@ To get started with DFly, follow these steps:
       export ETHERSCAN_TOKEN =
       ```
    Be sure to start an infura project first at: https://www.infura.io/
+## Contracts Deployment
+This is an essential step to be able to use DFly. Although some test contracts are already deployed in the Sepolia test net, you need to deploy your own contracts.
+In order to do this a deploy.py script is available under the scripts folder.
+
+1. Run brownie:
+   '''
+   brownie run deploy.py --network sepolia
+   '''
+The example is done for sepolia network, but you can change your network under brownie definitions. For more information go to [Brownie Documentation](https://eth-brownie.readthedocs.io/en/stable/toctree.html)
 ## Usage
 <p align="center">
 <img src="https://imgtr.ee/images/2024/05/04/419523a45ae2d3f8e4fe5dcf6d8b3d2a.png" alt="419523a45ae2d3f8e4fe5dcf6d8b3d2a.png" border="0" />
@@ -88,12 +97,21 @@ To insert the operator and UAS number, following the logic of the previous figur
 
 To do this the following lines of code need to be included in SNMerkleTree.py, (change operator_number, nonce and uas_serial_number to your specific case). **The nonce has to be an integer** :
 
-   ```bash
+   ```
    insert_leaf("operator_number", nonce , "Operator")
    insert_leaf("uas_serial_number, nonce, "Specific")
    insert_leaf("uas_serial_number, nonce, "BVLOS")
    insert_leaf("uas_serial_number, nonce, "SpecialOps")
+   ```
 
+Once all this setup is done in the SNMerkleTree.py it's now possible to run SNMerkleTree, once again, using brownie:
+'''
+brownie run merkle_tree/SNMerkleTree.py --network sepolia
+'''
+
+### Flight Request
+
+Once the
 
 
 
