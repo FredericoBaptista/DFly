@@ -50,10 +50,11 @@ To get started with DFly, follow these steps:
    pip install -r requirements.txt
 4. Configure .env file.
    It's necessary to have a .env file with your wallet credentials inserted, so that you can run the project. The .env file looks like the following:
-      ```bash
+      ```
       export PRIVATE_KEY = 
       export WEB3_INFURA_PROJECT_ID = 
       export ETHERSCAN_TOKEN =
+      ```
    Be sure to start an infura project first at: https://www.infura.io/
 ## Usage
 <p align="center">
@@ -70,14 +71,14 @@ Using brownie it's possible to insert the UAS and UAS operator numbers into the 
 </p>
 
 To start properly the usage, you should initialize all the necessary trees with the required depth for the usage you want. In the following example, we choose all the merkle trees of depth 3. The following lines have to be included in SNMerkleTree.py:
-   ```bash
-      initialize_tree(3, "Operator")
-      initialize_tree(3, "Open")
-      initialize_tree(3, "Specific")
-      initialize_tree(3, "Certified")
-      initialize_tree(3, "SpecialOps")
-      initialize_tree(3, "BVLOS")
-
+   ```
+   initialize_tree(3, "Operator")
+   initialize_tree(3, "Open")
+   initialize_tree(3, "Specific")
+   initialize_tree(3, "Certified")
+   initialize_tree(3, "SpecialOps")
+   initialize_tree(3, "BVLOS")
+   ```
 To insert the operator and UAS number, following the logic of the previous figure, you can insert the UAS number and the operator number on the respective trees. In the following example, we choose a UAS legalized to fly on the following modes:
 
 | Operation Mode | Flight Category | Flight Type  |
