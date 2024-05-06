@@ -59,14 +59,30 @@ To get started with DFly, follow these steps:
 
    - Be sure to start an infura project first at: https://www.infura.io/
 
-5. Compile circom circuits:
+5. Compile the circom circuit:
+   To compile the circuits it's important to thouroughly follow these steps:
+   
    - Go to the circuits directory:
       ```bash
       cd circuits
    - Run the circom_script.sh:
       ```bash
       ./circom_script.sh
-   - Choose 
+   - Choose option 1 that compiles the circuit
+   - Go to SNMerkleTree and create a tree and add a leaf to that tree:
+      ```
+      initialize_tree(3, "Operator")
+      insert_leaf("operator_number", nonce , "Operator")
+      ```
+   Note that for this step to work, the contract MerkleTree.sol has to be already deployed.
+
+   - Try to get the proof for the leaf you previously inserted by running:
+      ```
+      get_proof("operator_number", nonce , "Operator")
+      ```
+      This will give an errour but it will create an input.json file under the InclusionProof_js folder. With this folder created it's now possible to run the rest of the circom_script.sh
+   
+   - Run circom_script.sh choosing the other options.
 
 
 ## Contracts Deployment
