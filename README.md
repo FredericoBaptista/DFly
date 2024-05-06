@@ -60,6 +60,7 @@ To get started with DFly, follow these steps:
    - Be sure to start an infura project first at: https://www.infura.io/
 
 5. Compile the circom circuit:
+   
    To compile the circuits it's important to thouroughly follow these steps:
    
    - Go to the circuits directory:
