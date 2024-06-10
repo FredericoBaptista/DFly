@@ -54,12 +54,13 @@ To get started with DFly, follow these steps:
          nano ~/.bashrc
       - Add to PATH, by adding to bashrc file with:
          ```
-         export PATH="$PATH:/mypath"
+         export PATH="$PATH:/home/myusername/.local/bin"
    - Check if installation is proper by typing:
       ```bash
       circom --help  
 3. Install all other needed dependencies:
    ```bash
+   cd ..
    pip install -r requirements.txt
 4. Configure .env file.
    - It's necessary to have a .env file with your wallet credentials inserted, so that you can run the project. The .env file looks like the following:
@@ -72,7 +73,12 @@ To get started with DFly, follow these steps:
 
    - Be sure to start an infura project first at: https://www.infura.io/
 
-5. Compile the circom circuit:
+5. Install circomlib
+   ```
+   npm install circomlib
+   ```
+
+6. Compile the circom circuit:
    
    To compile the circuits it's important to thouroughly follow these steps:
    
@@ -84,10 +90,14 @@ To get started with DFly, follow these steps:
       ./circom_script.sh
    - The name of the circuit is InclusionProof
    - Choose option 1 that compiles the circuit
-   - Go to SNMerkleTree and create a tree and add a leaf to that tree:
+   - Open the file scripts/merkle_tree/SNMerkleTree.py and create a tree and add a leaf to that tree (by adding the following lines to the main):
       ```
       initialize_tree(3, "Operator")
       insert_leaf("operator_number", nonce , "Operator")
+      ```
+   - Run brownie on cmd line
+      ```
+      brownie run merkle_tree/SNMerkleTree.py --network sepolia
       ```
    Note that for this step to work, the contract MerkleTree.sol has to be already deployed.
 

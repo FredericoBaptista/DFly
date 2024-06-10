@@ -289,7 +289,10 @@ def get_proof(serial_number, nonce, tree_name):
 
     #return parsed_output
 
-def main():    
+def main():
+    initialize_tree(3, "Operator")
+    insert_leaf("operator_number", nonce , "Operator")
+
     """
     initialize_tree(3, "Operator")
     initialize_tree(3, "Open")
