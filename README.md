@@ -19,7 +19,7 @@ DFly leverages cutting-edge technologies including Merkle trees for operation ca
 To get started with DFly, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/FredericoBaptista/Dfly/tree/main
+   git clone https://github.com/FredericoBaptista/Dfly
 2. Installing Circom
    - Install dependencies:
       - Node.js:
@@ -28,12 +28,14 @@ To get started with DFly, follow these steps:
          sudo apt install nodejs
       
       - Rust:
-         ```bash
+         ```
          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+      
+      Choose the default instalation by pressing enter.
 
       - snarkjs:
-         ```bash
-         npm install -g snarkjs
+         ```
+         sudo npm install -g snarkjs@0.6.11
    
    - Clone the circom repository:
       ```bash
@@ -41,7 +43,18 @@ To get started with DFly, follow these steps:
    
    - Enter the circom directory and use the cargo build to compile:
       ```bash
+      cd circom
       cargo build --release
+   - Install circom
+      ```bash
+      cargo install --path circom
+   - Add circom directory to PATH:
+      - Open bashrc:
+         ```
+         nano ~/.bashrc
+      - Add to PATH, by adding to bashrc file with:
+         ```
+         export PATH="$PATH:/mypath"
    - Check if installation is proper by typing:
       ```bash
       circom --help  
@@ -69,6 +82,7 @@ To get started with DFly, follow these steps:
    - Run the circom_script.sh:
       ```bash
       ./circom_script.sh
+   - The name of the circuit is InclusionProof
    - Choose option 1 that compiles the circuit
    - Go to SNMerkleTree and create a tree and add a leaf to that tree:
       ```
@@ -81,7 +95,7 @@ To get started with DFly, follow these steps:
       ```
       get_proof("operator_number", nonce , "Operator")
       ```
-      This will give an errour but it will create an input.json file under the InclusionProof_js folder. With this folder created it's now possible to run the rest of the circom_script.sh
+      This will give an error but it will create an input.json file under the InclusionProof_js folder. With this folder created it's now possible to run the rest of the circom_script.sh
    
    - Run circom_script.sh choosing the other options.
 
