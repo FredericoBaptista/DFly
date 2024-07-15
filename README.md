@@ -120,18 +120,16 @@ In order to do this a deploy.py script is available under the scripts folder.
    ```
 The example is done for sepolia network, but you can change your network under brownie definitions. For more information go to [Brownie Documentation](https://eth-brownie.readthedocs.io/en/stable/toctree.html)
 ## Usage
-<p align="center">
-<img src="https://imgtr.ee/images/2024/05/04/419523a45ae2d3f8e4fe5dcf6d8b3d2a.png" alt="419523a45ae2d3f8e4fe5dcf6d8b3d2a.png" border="0" />
-</p>
+
+![Alt text](images/Communication_diagram.png)
+  
 There's essentially, two phases of the usage of DFly, as it can be seen above. The first is the approval of the UAS and operator into the Merkle trees. The second is the actual usage of the smart contracts, that effectivelly allow the operator to request a flight authorisation.
 
 ### Approval in Merkle Trees
 
 Using brownie it's possible to insert the UAS and UAS operator numbers into the merkle trees. For that, it is necessary to understand the structure of the merkle tree management. The following figure explains just that:
 
-<p align="center">
-<img src="https://imgtr.ee/images/2024/05/04/a59b498dfbf4d2bd7feecca7ad87e873.png" alt="a59b498dfbf4d2bd7feecca7ad87e873.png" border="0" />
-</p>
+![Alt text](images/merkle_trees_management.png)
 
 To start properly the usage, you should initialize all the necessary trees with the required depth for the usage you want. In the following example, we choose all the merkle trees of depth 3. The following lines have to be included in SNMerkleTree.py:
    ```
@@ -174,9 +172,7 @@ brownie run merkle_tree/user_interface/FLIGHTREQ_GUI.py --network sepolia
 
 The UI will look like this:
 
-<p align="left">
-<img src="https://imgtr.ee/images/2024/05/04/f306813c00cb725949ee41f8861ff276.png" alt="f306813c00cb725949ee41f8861ff276.png" border="0" />
-<p>
+![Alt text](images/inputs_flight_req.png)
 
 You just have to fill in all the data and click "Submit". 
 
