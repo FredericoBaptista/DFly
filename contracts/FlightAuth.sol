@@ -8,7 +8,7 @@ import "./verifier.sol"; // update verifier after
 contract FlightAuth is Approvable, Verifier {
     // Defines Aircraft data
     struct FlightRequest {
-        string _SN;
+        string _SN; 
         // Operational Mode variables
         uint _op_mode;
         ZKProof proof_op_mode;
@@ -30,7 +30,7 @@ contract FlightAuth is Approvable, Verifier {
         uint256[2] _part1;
         uint256[2][2] _part2;
         uint256[2] _part3;
-        uint256[1] _part4;
+        uint256[2] _part4;
     }
 
     struct FlightInfo {
@@ -44,7 +44,7 @@ contract FlightAuth is Approvable, Verifier {
     // This event is "displayed" each time a new flight request is done
     event NewFlightRequest(
         uint createdAt,
-        string indexed serial_number,
+        uint256 indexed serial_number,
         uint op_mode,
         bool flight_type,
         bool flight_cat,
@@ -84,7 +84,7 @@ contract FlightAuth is Approvable, Verifier {
             uint _createdAt = block.timestamp;
             emit NewFlightRequest(
             _createdAt,
-            current_request._SN,
+            current_request.proof_flight_cat._part4[1],
             current_request._op_mode,
             current_request._flight_type,
             current_request._flight_cat,
@@ -100,7 +100,7 @@ contract FlightAuth is Approvable, Verifier {
             uint _createdAt = block.timestamp;
             emit NewFlightRequest(
             _createdAt,
-            current_request._SN,
+            current_request.proof_flight_cat._part4[1],
             current_request._op_mode,
             current_request._flight_type,
             current_request._flight_cat,
